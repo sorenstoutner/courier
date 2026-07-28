@@ -18,6 +18,7 @@ Build-Depends:
 	sysconftool,
 	wget,
 	gpg ( >= 2),
+	gpg-agent,
 	expect,
 	libgdbm-dev,
 	libidn2-dev,

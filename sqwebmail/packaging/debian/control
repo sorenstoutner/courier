@@ -10,6 +10,7 @@ Build-Depends:
 	%BUILD_DEPENDS%,
 	autoconf-archive,
 	gpg ( >= 2),
+	gpg-agent,
 	hunspell,
 	libhunspell-dev,
 	libgdbm-dev,
