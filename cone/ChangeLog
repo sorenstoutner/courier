@@ -1,3 +1,8 @@
+2026-07-27  Sam Varshavchik  <mrsam@courier-mta.com>
+
+	* packaging/debian/control (Build-Depends): Explicit dependency
+	on gpg-agent.
+
 2.4
 
 2026-07-24  Sam Varshavchik  <mrsam@courier-mta.com>

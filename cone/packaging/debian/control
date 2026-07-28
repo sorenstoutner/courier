@@ -11,6 +11,7 @@ Build-Depends:
 	debhelper-compat (= 12),
 	%BUILD_DEPENDS%,
 	autoconf-archive,
+	gpg-agent,
 	libncurses-dev,
 	libidn2-dev,
 	hunspell,
