@@ -1,3 +1,7 @@
+2026-07-27  Sam Varshavchik  <mrsam@courier-mta.com>
+
+	* packaging/debian/control/rules: explicit Rules-Requires-Root:
+
 2.0.6
 
 2026-07-24  Sam Varshavchik  <mrsam@courier-mta.com>

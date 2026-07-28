@@ -3,6 +3,7 @@ Priority: optional
 Section: contrib/mail
 Origin: Ubuntu
 Maintainer: Sam Varshavchik <mrsam@courier-mta.com>
+Rules-Requires-Root: binary-targets
 Standards-Version: 4.4.1
 Homepage: https://www.courier-mta.org/
 Build-Depends:
