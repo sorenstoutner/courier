@@ -1,3 +1,9 @@
+2.0.7
+
+2026-08-02  Sam Varshavchik  <mrsam@courier-mta.com>
+
+	* imapd.C (decode_date_time): Fix date parsing.
+
 2026-07-27  Sam Varshavchik  <mrsam@courier-mta.com>
 
 	* packaging/debian/control (Build-Depends): Explicit dependency
