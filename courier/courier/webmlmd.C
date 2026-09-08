@@ -37,6 +37,7 @@
 #include	<list>
 #include	<vector>
 #include	<string>
+#include	<string_view>
 #include	<algorithm>
 #include	<iostream>
 #include	<fstream>
@@ -162,9 +163,7 @@ int main(int argc, char **argv)
 		std::vector<char> shscript_v;
 
 		{
-			std::string shscript=argv[0];
-
-			shscript += ".rc";
+			std::string_view shscript=LIBEXECDIR "/webmlmd.rc";
 
 			shscript_v.reserve(shscript.size()+1);
 
@@ -182,7 +181,7 @@ int main(int argc, char **argv)
 		new_argv.insert(new_argv.end(), argv, argv+argc);
 		new_argv.push_back(0);
 
-		execve(LIBEXECDIR "/webmlmd.rc", new_argv[0], &new_argv[0]);
+		execvp(new_argv[0], &new_argv[0]);
 		perror(new_argv[0]);
 		exit(1);
 	}
