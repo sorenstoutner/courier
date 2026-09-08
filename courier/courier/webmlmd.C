@@ -6,6 +6,7 @@
 
 #include	"config.h"
 #include	"cgi/cgi.h"
+#include	"libexecdir.h"
 #include	"rfc822/rfc822.h"
 #include	"rfc822/rfc2047.h"
 #include	"rfc2045/rfc2045.h"
@@ -181,7 +182,7 @@ int main(int argc, char **argv)
 		new_argv.insert(new_argv.end(), argv, argv+argc);
 		new_argv.push_back(0);
 
-		execvp(new_argv[0], &new_argv[0]);
+		execve(LIBEXECDIR "/webmlmd.rc", new_argv[0], &new_argv[0]);
 		perror(new_argv[0]);
 		exit(1);
 	}

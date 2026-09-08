@@ -47,6 +47,7 @@ extrapkglib=makedatprog courierpop3login pcpd
 pkglibexecdir=$(libexecdir)/courier
 pkglibexec_PROGRAMS=aliasexp aliascombine aliascreate \
 		sqwebmaild submit @EXTRAPKGLIB@
+pkglibexec_SCRIPTS=webmlmd.rc
 
 webmaildir=$(libexecdir)/courier/webmail
 webmail_PROGRAMS=webmail webmlm
@@ -67,8 +68,6 @@ bin_PROGRAMS=cancelmsg mailq sendmail \
 	testmxlookup dotforward \
 	couriermlm webmlmd \
 	courier-config @couriertls@ @EXTRABIN@
-
-bin_SCRIPTS=webmlmd.rc
 
 extrasbin=couriertcpd$(EXEEXT)
 

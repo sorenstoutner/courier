@@ -98,7 +98,7 @@ PERMS="
 @bindir@/couriermlm		555
 @bindir@/dotforward		555
 @bindir@/webmlmd		555
-@bindir@/webmlmd.rc		555
+@libexecdir@/webmlmd.rc		555
 
 @datadir@/makedat		555	x	bin	bin
 @bindir@/makedat		555
