@@ -1,6 +1,6 @@
 #
 # Package explicitly sets these permissions
 #
-non-standard-executable-perm 0555 != 0755 [usr/lib/courier/bin/webmlmd.rc]
+non-standard-executable-perm 0555 != 0755 [usr/lib/courier/libexec/webmlmd.rc]
 non-standard-executable-perm 0555 != 0755 [usr/lib/courier/bin/webmlmd]
 non-standard-executable-perm 0555 != 0755 [usr/lib/courier/libexec/cgi-bin/webmlm]

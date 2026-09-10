@@ -6,6 +6,7 @@
 
 #include	"config.h"
 #include	"cgi/cgi.h"
+#include	"libexecdir.h"
 #include	"rfc822/rfc822.h"
 #include	"rfc822/rfc2047.h"
 #include	"rfc2045/rfc2045.h"
@@ -36,6 +37,7 @@
 #include	<list>
 #include	<vector>
 #include	<string>
+#include	<string_view>
 #include	<algorithm>
 #include	<iostream>
 #include	<fstream>
@@ -161,9 +163,7 @@ int main(int argc, char **argv)
 		std::vector<char> shscript_v;
 
 		{
-			std::string shscript=argv[0];
-
-			shscript += ".rc";
+			std::string_view shscript=LIBEXECDIR "/webmlmd.rc";
 
 			shscript_v.reserve(shscript.size()+1);
 
